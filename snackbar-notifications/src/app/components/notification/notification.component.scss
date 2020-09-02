@@ -1,0 +1,46 @@
+@import './../../../assets/styles/notifications.color.scss';
+
+.notification {
+    position: relative;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    margin: 16px;
+    max-width: 33vw;
+    min-width: 344px;
+    padding: 14px 16px;
+    min-height: 48px;
+    transform-origin: center;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+
+    .content {
+        color: #fff;
+    }
+
+    .close {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+        mat-icon {
+            color: #fff;
+        }
+    }
+}
+
+.error {
+    background-color: $error;
+}
+
+.warning {
+    background-color: $warning;
+}
+
+.success {
+    background-color: $success;
+}
+
+.infor {
+    background-color: $infor;
+}
